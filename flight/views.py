@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import authenticate, login, logout
-
+# views 
 from datetime import datetime
 import math
 from .models import *
