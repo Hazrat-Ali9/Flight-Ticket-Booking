@@ -1,0 +1,452 @@
+/*.section1{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.white{
+    color: white;
+    font-size: large;
+}
+.white-2{
+    font-size: medium;
+}
+.v-line{
+    border-left: 1px dashed rgba(255, 255, 255, .9);
+    height: 100%;
+    margin: 0px 15px;
+}
+.small-label{
+    font-size: .7em;
+    color: rgb(240, 240, 240);
+}
+
+.query-data-div{
+    min-height: 11vh;
+    background-color: crimson;
+    background-image: linear-gradient(135deg, crimson, #b8017b);
+    display: flex;
+}
+.query-data-div > .container{
+    display: flex;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 8px;
+}
+.query-data-div > .container > div{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+.trip-places > div{
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+.trip-time > div{
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+.trip-places{
+    flex: 1;
+    overflow: hidden;
+    min-width: 33%;
+}
+.trip-time, .trip-class{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.trip-modify{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.spl-btn{
+    transition-duration: .2s;
+    color: white;
+    border-color: white;
+}*/
+
+
+/*Already in comment below code*//***********************************/
+/*.trip-modify button:hover, button:active, button:focus{
+    background-color: rgba(220,53,69,.1);
+}*/
+/*Already in comment above code*//***********************************/
+
+
+/*
+.trip-modify button:hover, button:active{
+    background-color: rgb(255, 235, 245);
+    color: rgb(189, 4, 116);
+}
+.trip-modify button:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,.3);
+}*/
+
+.query-result-div, .query-result-div-2{
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+}
+.filter-div{
+    padding: 15px;
+}
+.actual-result-div{
+    flex: 1;
+    padding: 20px 35px;
+}
+.filter-box > div{
+    margin: 10px 0px 30px 0px;
+}
+.filter-div h4{
+    font-weight: 800;
+    line-height: .75em;
+    font-size: 1.1em;
+    color: #321d1d;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.filter-box .font-weight-bold{
+    margin-bottom: 5px;
+}
+.square-box{
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: .6em;
+    width: 23%;
+    transition-duration: .2s;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.square-box:hover{
+    cursor: pointer;
+}
+.square-box.active{
+    background-color: #0075ff;
+    border-color: #0075ff;
+    color: white;
+}
+.square-box img{
+    width: 34px;
+}
+.filter-img-div{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-link{
+    background: none;
+    border: none;
+    outline: none;
+    color: blue;
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active{
+    text-decoration: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.each-flight-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;/*
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);*/
+}
+.each-flight-div-box{
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 10px;
+}
+.card{
+    border: none;
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.each-flight-div > div{
+    display: flex;
+}
+.company-details{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.company-name{
+    font-weight: bold;
+}
+.plane-name{
+    font-size: .8em;
+    color: rgb(97, 97, 97);
+}
+.flight-company{
+    width: 25%;
+}
+.flight-time{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+.flight-details{
+    width: 32%;
+    justify-content: space-between;
+}
+.flight-origin-time, .flight-destination-time, .flight-origin-time2, .flight-destination-time2{
+    width: 40%;
+}
+.flight-stops, .flight-stops2{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    opacity: 1;
+}
+.flight-time h5{
+    margin-bottom: 2px;
+}
+.flight-place{
+    font-size: .8em;
+    color: grey;
+    text-align: center;
+}
+.each-flight-div > div{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.flight-price2{
+    display: flex;
+    margin-right: 15px;
+}
+.flight-price2 > h5{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-weight: 600;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 4px 7px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .9em;
+}
+.tooltip .tooltiptext:before{
+    content:'';
+    display:block;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, .8);
+    width:0;
+    height:0;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:100%;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+/*.flight-stops-seperator{
+    border-top: 2px solid #979797;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.flight-stops-disc{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #000;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}*/
+.flight-details-btn{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+.flight-details-btn button{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.sort-div{
+    display: flex;
+    justify-content: space-between;
+    /*margin-left: 20px;
+    margin-right: 150px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: .9em;
+}
+.sort-arrive, .sort-depart{
+    /*margin-left: 34px;
+    margin-right: 4px;*/
+    text-align: center;
+}
+.sort-price{
+    margin-right: 20px;
+}
+
+.price-range-output{
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    color: #808080;
+    font-size: .8em;
+}
+
+
+/*.show{
+    display: block;
+}
+.hide{
+    display: none;
+}*/
+
+.query-data-div2 > .container{
+    display: flex;
+    justify-content: space-between;
+}
+.query-data-div2 .trip-modify{
+    padding-left: 0;
+    padding-right: 0;
+}
+.query-data-div2 .trip-modify form{
+    display: flex;
+    justify-content: start;
+}
+.query-data-div2 .trip-filter form{
+    display: flex;
+    justify-content: center;
+}
+
+
+.close-filter{
+    display: none;
+    margin-top: 10px;
+}
+.close-filter .b2{
+    padding: 0;
+    width: 100%;
+    padding: .375rem .75rem;
+}
+.close-filter button:focus, button:active{
+    box-shadow: none;
+}
+
+
+
+
+@media (max-width: 376px){
+    .query-result-div{
+        display: block;
+    }
+    .query-result-div > .container > .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .query-data-div{
+        display: none;
+    }
+    .query-data-div2{
+        display: block;
+    }
+    .actual-result-div{
+        padding: 10px 0px!important;
+    }
+    .sort-div{
+        display: none!important;
+    }
+    .each-flight-div{
+        padding: 12px 10px;
+    }
+    .each-flight-div div{
+        overflow-wrap: break-word;
+    }
+    .flight-icon{
+        display: none;
+    }
+    .flight-time-div{
+        max-width: 44%;
+    }
+    .flight-time h5{
+        font-size: 1em;
+    }
+    .flight-stops{
+        width: 17%;
+    }
+    .flight-company{
+        width: 23%;
+    }
+    .flight-details h5{
+        font-size: 1em;
+    }
+    .o-b{
+        display: none;
+    }
+    .flight-price{
+        margin: auto;
+    }
+    .flight-details-btn{
+        display: none;
+    }
+    .flight-details{
+        display: flex;
+        justify-content: center;
+        width: 23%;
+    }
+    .white{
+        font-size: medium;
+    }
+
+
+
+    .filter-div{
+        position: fixed;
+        height: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 999999;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: none;
+    }
+    .filter-div h4{
+        font-size: 1.4em;
+    }
+    .close-filter{
+        display: block;
+    }
+    .f1{
+        background-color: rgb(227, 242, 253);
+    }
+    .selection1, .selection2, .selection-total, .selection-confirm{
+        display: none!important;
+    }
+    .selection-media{
+        display: flex!important;
+    }
+}

@@ -1,0 +1,113 @@
+.section1{
+    display: flex;
+    align-content: center;
+    background-color: rgb(250, 250, 250);
+}
+
+.payment-box{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    font-weight: bold;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+.payment-box-head-div{
+    background-color: rgb(245, 245, 245);
+    padding: 5px 12px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.payment-box-head{
+    display: flex;
+    justify-content: space-between;
+}
+.payment-box-head h5{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.card-img{
+    width: 90%;
+    height: auto;
+    float: right;
+}
+.display-td{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.payment-details-input-box{
+    padding: 15px;
+}
+input{
+    box-shadow: inset 0 0 3px rgba(0,0,0,.1);
+}
+.form-group{
+    width: 100%;
+}
+label{
+    margin-bottom: .3rem;
+    font-size: .9em;
+}
+.left-col{
+    width: 70%;
+}
+.right-col{
+    width: 30%;
+    padding-right: 1.5em;
+}
+.expiry-input-div{
+    display: flex;
+}
+.month-div{
+    margin-right: 1em;
+}
+
+.expiry-cvv > .row{
+    width: 100%;
+}
+
+.payment-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+
+
+
+
+@media (max-width: 376px){
+    .section1 > .container{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .payment-box{
+        margin: auto 0;
+        width: 100%;
+    }
+    .payment-box-head-div{
+        padding: 5px 10px;
+    }
+    .payment-details-input-box{
+        padding: 15px 10px;
+    }
+    .right-col{
+        padding-right: 0;
+    }
+}
