@@ -2,7 +2,7 @@ from datetime import timedelta, datetime
 from flight.models import *
 from .models import Week, Place, Flight
 from tqdm import tqdm
-
+# utlis
 def get_number_of_lines(file):
     with open(file) as f:
         for i, l in enumerate(f):
